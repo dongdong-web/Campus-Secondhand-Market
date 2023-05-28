@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a29791ce-b412-4f8e-9d23-86d714789ab3" name="默认的" comment="后端源码">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/job/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="F:\job\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1xU0dt2NXSewI8klSEJzE5EfGFw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/project_now/jiejian/HD08FileManageSystemServer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5712644" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\secondhandShop\leave unused-goods-trading-platform -back\src\main\java\com\second\hand\trading\server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13362\Desktop\second-hand-trading_back-master\src\main\resources" />
+      <recent name="C:\Users\13362\Desktop\second-hand-trading_back-master\src\main\java\com\second\hand\trading" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServerApplication">
+    <configuration name="所有在server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.second.hand.trading.server.ServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.所有在server" />
+      <item itemvalue="Maven.server [clean]" />
+      <item itemvalue="Spring Boot.ServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.所有在server" />
+        <item itemvalue="Maven.server [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a29791ce-b412-4f8e-9d23-86d714789ab3" name="默认的" comment="" />
+      <created>1630394453601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630394453601</updated>
+      <workItem from="1630394454859" duration="2105000" />
+      <workItem from="1630396651549" duration="3334000" />
+      <workItem from="1630455164109" duration="11805000" />
+      <workItem from="1630542421907" duration="660000" />
+      <workItem from="1630572226848" duration="1350000" />
+      <workItem from="1630628884116" duration="7634000" />
+      <workItem from="1630723794307" duration="716000" />
+      <workItem from="1630887743598" duration="12408000" />
+      <workItem from="1630974629855" duration="3421000" />
+      <workItem from="1630980688697" duration="450000" />
+      <workItem from="1630982619495" duration="3330000" />
+      <workItem from="1631000126951" duration="2453000" />
+      <workItem from="1631060720059" duration="4093000" />
+      <workItem from="1631147400138" duration="1972000" />
+      <workItem from="1631173990334" duration="1777000" />
+      <workItem from="1631233605122" duration="5589000" />
+      <workItem from="1645687637981" duration="3105000" />
+      <workItem from="1645704464178" duration="7000" />
+      <workItem from="1645704513685" duration="2004000" />
+      <workItem from="1645711933683" duration="1361000" />
+      <workItem from="1645787039422" duration="1095000" />
+      <workItem from="1645944369195" duration="2124000" />
+      <workItem from="1646378640801" duration="9072000" />
+      <workItem from="1646455782774" duration="6152000" />
+      <workItem from="1646552905548" duration="2187000" />
+      <workItem from="1646714295522" duration="2510000" />
+      <workItem from="1646889953193" duration="10661000" />
+      <workItem from="1646959711485" duration="3703000" />
+      <workItem from="1646992381184" duration="632000" />
+      <workItem from="1646993994001" duration="962000" />
+      <workItem from="1647335791392" duration="658000" />
+      <workItem from="1647413354433" duration="2834000" />
+      <workItem from="1647585697898" duration="12332000" />
+      <workItem from="1647690442811" duration="2514000" />
+      <workItem from="1647735054599" duration="4782000" />
+      <workItem from="1648449164695" duration="2071000" />
+      <workItem from="1648529073466" duration="8892000" />
+      <workItem from="1648635587540" duration="1917000" />
+      <workItem from="1648701901917" duration="7362000" />
+      <workItem from="1649240255148" duration="1521000" />
+      <workItem from="1649504221592" duration="9468000" />
+      <workItem from="1649570043477" duration="7331000" />
+      <workItem from="1649644267110" duration="1537000" />
+      <workItem from="1649740781740" duration="10938000" />
+      <workItem from="1649768321891" duration="6834000" />
+      <workItem from="1649776994059" duration="675000" />
+      <workItem from="1649898792634" duration="3717000" />
+      <workItem from="1649902532304" duration="7582000" />
+      <workItem from="1651112365348" duration="1268000" />
+      <workItem from="1651275346174" duration="8680000" />
+      <workItem from="1651306251210" duration="3515000" />
+      <workItem from="1651368028566" duration="5308000" />
+      <workItem from="1651374323831" duration="3531000" />
+      <workItem from="1651394912514" duration="3071000" />
+      <workItem from="1651397996963" duration="1623000" />
+      <workItem from="1651399641305" duration="420000" />
+      <workItem from="1651653833832" duration="1019000" />
+      <workItem from="1651657403188" duration="960000" />
+      <workItem from="1651887948195" duration="2814000" />
+      <workItem from="1652158513098" duration="1226000" />
+      <workItem from="1652357096615" duration="3157000" />
+      <workItem from="1652360848064" duration="169000" />
+      <workItem from="1652361026034" duration="228000" />
+      <workItem from="1652442252769" duration="1655000" />
+      <workItem from="1652483884492" duration="638000" />
+      <workItem from="1654327116062" duration="861000" />
+      <workItem from="1654341557363" duration="719000" />
+      <workItem from="1656502332730" duration="1086000" />
+      <workItem from="1664450902064" duration="567000" />
+      <workItem from="1664699595331" duration="102000" />
+      <workItem from="1664699703270" duration="53000" />
+      <workItem from="1665407207119" duration="200000" />
+      <workItem from="1665407443072" duration="888000" />
+      <workItem from="1665558735048" duration="1172000" />
+      <workItem from="1665815245466" duration="1313000" />
+    </task>
+    <task id="LOCAL-00001" summary="校园二手闲置物品交易平台后端">
+      <created>1651657560713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651657560713</updated>
+    </task>
+    <task id="LOCAL-00002" summary="后端源码">
+      <created>1664451317353</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664451317353</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="校园二手闲置物品交易平台后端" />
+    <MESSAGE value="后端源码" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端源码" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" width="1174" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="414" y="175" width="1174" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state x="730" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" />
+    <state x="730" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state x="696" y="224" key="FileChooserDialogImpl" />
+    <state x="580" y="185" key="FileChooserDialogImpl/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state x="696" y="224" key="FileChooserDialogImpl/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom" />
+    <state width="1557" height="276" key="GridCell.Tab.0.bottom/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center" />
+    <state width="1557" height="276" key="GridCell.Tab.0.center/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left" />
+    <state width="1557" height="276" key="GridCell.Tab.0.left/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right" />
+    <state width="1557" height="276" key="GridCell.Tab.0.right/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.1.bottom" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.1.bottom/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.1.center" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.1.center/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.1.left" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.1.left/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="288" key="GridCell.Tab.1.right" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="288" key="GridCell.Tab.1.right/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="276" key="GridCell.Tab.2.bottom" />
+    <state width="1557" height="276" key="GridCell.Tab.2.bottom/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="276" key="GridCell.Tab.2.bottom/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="276" key="GridCell.Tab.2.center" />
+    <state width="1557" height="276" key="GridCell.Tab.2.center/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="276" key="GridCell.Tab.2.center/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="276" key="GridCell.Tab.2.left" />
+    <state width="1557" height="276" key="GridCell.Tab.2.left/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="276" key="GridCell.Tab.2.left/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state width="1877" height="276" key="GridCell.Tab.2.right" />
+    <state width="1557" height="276" key="GridCell.Tab.2.right/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state width="1877" height="276" key="GridCell.Tab.2.right/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+    <state x="397" y="135" key="SettingsEditor" />
+    <state x="301" y="10" key="SettingsEditor/1600.32.1680.1010/0.0.1600.860@0.0.1600.860" />
+    <state x="397" y="135" key="SettingsEditor/1920.32.1680.1010/0.0.1920.1040@0.0.1920.1040" />
+  </component>
+</project>
