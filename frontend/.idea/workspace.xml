@@ -4,7 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcec6b33-b9a3-44b6-9080-beee479448f8" name="默认的" comment="前端源码" />
+    <list default="true" id="bcec6b33-b9a3-44b6-9080-beee479448f8" name="默认的" comment="前端源码">
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/application.properties.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/Exception/ParamException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/Handler/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/LogCostInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/ServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/config/AliPayConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/AliPayController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/FavoriteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/IdleItemController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/MessageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/OrderAddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/AddressDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/AdminDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/FavoriteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/IdleItemDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/OrderAddressDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/OrderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/enums/ErrorMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/AddressModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/AdminModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/FavoriteModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/IdleItemModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/MessageModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/OrderAddressModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/OrderModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/model/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/FavoriteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/IdleItemService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/MessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/OrderAddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/AddressServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/FavoriteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/IdleItemServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/MessageServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/OrderAddressServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/utils/IdFactoryUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/utils/OrderTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/utils/OrderTaskHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/vo/PageVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/com/second/hand/trading/server/vo/ResultVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/AddressDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/AdminDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/FavoriteDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/IdleItemDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/MessageDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/OrderAddressDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/OrderDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/target/classes/mapper/UserDao.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +124,13 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/hjy/Downloads/synch/code_space/idea_workspace/dp/second-hand/frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/hjy/Downloads/synch/code_space/idea_workspace/dp/second-hand/frontend/node_modules/prettier",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
@@ -136,6 +212,7 @@
       <workItem from="1664451371844" duration="104000" />
       <workItem from="1664699636943" duration="15000" />
       <workItem from="1685182577833" duration="45000" />
+      <workItem from="1685271988326" duration="2379000" />
     </task>
     <task id="LOCAL-00001" summary="二手商城Vue前端">
       <created>1651656084360</created>
@@ -172,25 +249,5 @@
     <MESSAGE value="二手商城Vue前端" />
     <MESSAGE value="前端源码" />
     <option name="LAST_COMMIT_MESSAGE" value="前端源码" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" />
-    <state x="549" y="119" key="FileChooserDialogImpl" />
-    <state x="549" y="119" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" />
-    <state x="270" y="0" key="SettingsEditor" />
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" />
-    <state x="322" y="72" key="new project wizard" />
-    <state x="322" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" />
   </component>
 </project>
