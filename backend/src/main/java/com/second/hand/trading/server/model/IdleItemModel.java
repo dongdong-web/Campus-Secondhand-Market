@@ -65,25 +65,4 @@ public class IdleItemModel implements Serializable {
     private UserModel user;
 
     private static final long serialVersionUID = 1L;
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", idleName=").append(idleName);
-        sb.append(", idleDetails=").append(idleDetails);
-        sb.append(", pictureList=").append(pictureList);
-        sb.append(", idlePrice=").append(idlePrice);
-        sb.append(", idlePlace=").append(idlePlace);
-        sb.append(", idleLabel=").append(idleLabel);
-        sb.append(", releaseTime=").append(releaseTime);
-        sb.append(", idleStatus=").append(idleStatus);
-        sb.append(", userId=").append(userId);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }

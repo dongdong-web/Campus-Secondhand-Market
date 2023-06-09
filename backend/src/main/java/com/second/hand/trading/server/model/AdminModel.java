@@ -34,20 +34,4 @@ public class AdminModel implements Serializable {
     // 当你一个类实现了Serializable接口，就会有显式地定义serialVersionUID
     // 序列化时为了保持版本的兼容性，即在版本升级时反序列化仍保持对象的唯一性。
     private static final long serialVersionUID = 1L;
-
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", accountNumber=").append(accountNumber);
-        sb.append(", adminPassword=").append(adminPassword);
-        sb.append(", adminName=").append(adminName);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }

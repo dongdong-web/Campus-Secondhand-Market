@@ -71,26 +71,4 @@ public class OrderModel implements Serializable {
     private Byte isDeleted;
 
     private static final long serialVersionUID = 1L;
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", orderNumber=").append(orderNumber);
-        sb.append(", userId=").append(userId);
-        sb.append(", idleId=").append(idleId);
-        sb.append(", orderPrice=").append(orderPrice);
-        sb.append(", paymentStatus=").append(paymentStatus);
-        sb.append(", paymentWay=").append(paymentWay);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", paymentTime=").append(paymentTime);
-        sb.append(", orderStatus=").append(orderStatus);
-        sb.append(", isDeleted=").append(isDeleted);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }

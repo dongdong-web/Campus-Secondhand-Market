@@ -21,22 +21,4 @@ public class OrderAddressModel implements Serializable {
     private String detailAddress;
 
     private static final long serialVersionUID = 1L;
-
-
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", orderId=").append(orderId);
-        sb.append(", consigneeName=").append(consigneeName);
-        sb.append(", consigneePhone=").append(consigneePhone);
-        sb.append(", detailAddress=").append(detailAddress);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }

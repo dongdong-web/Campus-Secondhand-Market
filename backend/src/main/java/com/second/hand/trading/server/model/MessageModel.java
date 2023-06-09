@@ -55,23 +55,4 @@ public class MessageModel implements Serializable {
     private MessageModel toM;
 
     private static final long serialVersionUID = 1L;
-
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", userId=").append(userId);
-        sb.append(", idleId=").append(idleId);
-        sb.append(", content=").append(content);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", toUser=").append(toUser);
-        sb.append(", toMessage=").append(toMessage);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
 }
