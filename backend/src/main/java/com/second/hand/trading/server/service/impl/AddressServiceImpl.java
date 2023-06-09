@@ -4,7 +4,6 @@ import com.second.hand.trading.server.dao.AddressDao;
 import com.second.hand.trading.server.model.AddressModel;
 import com.second.hand.trading.server.service.AddressService;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;

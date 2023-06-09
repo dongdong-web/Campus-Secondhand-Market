@@ -1,6 +1,5 @@
 package com.second.hand.trading.server.vo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

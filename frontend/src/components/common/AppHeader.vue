@@ -2,7 +2,7 @@
     <div class="header">
         <div class="header-container">
             <div class="app-name">
-                <router-link to="/">校园二手闲置物品交易平台</router-link>
+                <router-link to="/">校园二手商城系统</router-link>
             </div>
             <div class="search-container">
                 <!-- 按回车触发函数  @keyup.enter.native -->
@@ -10,7 +10,7 @@
                     <el-button slot="append" icon="el-icon-search" @click="searchIdle"></el-button>
                 </el-input>
             </div>
-            <el-button type="primary" icon="el-icon-plus"  @click="toRelease">发布闲置/公告</el-button>
+            <el-button type="primary" icon="el-icon-plus"  @click="toRelease">发布闲置/求购</el-button>
             <el-button type="primary" icon="el-icon-chat-dot-round" @click="toMessage">消息</el-button>
             <router-link v-if="!isLogin" class="user-name-text" to="/login">登录</router-link>
             <el-dropdown trigger="click" v-else>

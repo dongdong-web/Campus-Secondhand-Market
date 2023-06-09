@@ -52,7 +52,7 @@
                 </el-dialog>
                 <div class="order-info-container">
                     <div class="order-info-title">订单信息（{{orderStatus[orderInfo.orderStatus]}}）：</div>
-                    <div class="order-info-item">编号：{{orderInfo.orderNumber}}</div>
+                    <div class="order-info-item">订单编号：{{orderInfo.orderNumber}}</div>
                     <div class="order-info-item">支付状态：{{orderInfo.paymentStatus===0?'未支付':'已支付'}}</div>
                     <div class="order-info-item">支付方式：{{orderInfo.paymentWay}}</div>
                     <div class="order-info-item">创建时间：{{orderInfo.createTime.substring(0, 10) + ' ' +
@@ -61,6 +61,7 @@
                     <div class="order-info-item">支付时间：{{orderInfo.paymentTime?orderInfo.paymentTime.substring(0, 10) + ' ' +
                         orderInfo.paymentTime.substring(11, 19):''}}
                     </div>
+<!--                    <div class="order-info-item">支付宝交易号：{{orderInfo.tradeNo}}</div>-->
                 </div>
                 <div class="menu">
                     <el-button v-if="userId==orderInfo.userId&&orderInfo.orderStatus===0" type="danger" plain @click="changeOrderStatus(4,orderInfo)">取消订单</el-button>
@@ -107,6 +108,9 @@
                         userId: '',
                     },
                     orderNumber: "",
+                    // 支付宝交易订单号
+                    // tradeNo:"",
+
                     orderPrice: 0,
                     orderStatus: 0,
                     paymentStatus: 0,
@@ -243,15 +247,12 @@
                             cancelButtonText: '取消',
                             type: 'warning'
                         }).then(() => {
-
                                 this.$api.updateOrder({
                                     id: orderInfo.id,
                                     orderStatus: orderStatus,
                                     paymentStatus: 1,
                                     paymentWay: '支付宝',
                                 }).then(res => {
-
-
                                     var address = "http://localhost:8080/alipay/pay?name=" + orderInfo.id + "&no="+
                                       Math.random().toString(36).substr(2) + "&price=" + orderInfo.idleItem.idlePrice;
 

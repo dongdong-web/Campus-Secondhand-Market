@@ -1,0 +1,57 @@
+# 使用对象关系映射，将对象和XML文件联系起来
+# 指定MyBatis映射文件的路径
+mybatis:
+  typeAliasesPackage: com.second.hand.trading.server.model
+  mapperLocations: classpath:mapper/*.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/second_hand_trading?serverTimezone=UTC&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: 123456
+
+  # 配置文件上传功能
+  servlet:
+    multipart:
+      enabled: true
+      # 设置单个文件上传的最大大小
+      max-file-size: 200MB
+      # 设置每次请求上传的最大总大小
+      max-request-size: 200MB
+
+  jackson:
+    # 设置Jackson的时区
+    time-zone: GMT+8
+    # 设置日期格式化
+    date-format: yyyy-MM-dd HH:mm:ss
+
+# 中文乱码处理
+server:
+  servlet:
+    encoding:
+      # 设置字符编码为UTF-8
+      charset: utf-8
+      # 启用字符编码配置
+      enabled: true
+      # 强制使用字符编码
+      force: true
+
+alipay:
+  appId: 2021000122694837
+
+  appPrivateKey: MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCqOSyeZNyrvRTpe7X4vhEgITGQVELYUplyiqxh8SKQuYISIdTQQl+xonV+kqFs/JTPp7YK/JBL6ROaP85LNEJQWxJvqp0IW5kfMKkUcaW7afI7ldrC9ENah34YWkxA9Cv34Uvtw6jmLIXYWCq9Xxw7kCR6j8BYrMyvBUIMviizute8HSUg2ftOvVJOOpv6h1jDJX5lBCoDxH+7whM4/9CBhLh3oAD53QP93Eab1bXSpBrezs2nJjM9E6PEsKKw4lWSrhoQuWYf7jZDsPVOaPBLojI0/mQjsLOoB4LIZi/GVXB/HZLKbvbPrm4sigaK3SzzGj4HCdSmYrOFr2CooMWdAgMBAAECggEAdCLH71UvPTim0NlngMrkUkBzWV4zsPVB3eUA0V28UHNQa+CLGn9+XGpTsUSHQB1fxgFNcVd5d2EQz7dinuqLp9lKzcbglngwExiW8uzKvv/8lWybMVGHtnckr6bDybkNWnRq4lAQpuGPe9hDaKpAT977FGeJOrbCe1KiCqGekWf2mDAAMopiYoKp8EIqbnpJUJLxKvOdLOhWmjEHHCjh8qoBDCIBmGGEaDLK6vtRjEi59QEUvUlMa7oQdf5cruFGAodMCE/2sDqYuiDjZsOfNE4xAreJ/H+07DUZmmP6QS5T/mdOE0wO/+jiDnFVQKqjKubTApmOZlqfuIvJ8XHwnQKBgQDXIHaY4KzQhSOauTdT0c/fy7ai+0tmos2evMZh73YU08c0aDBh+9Yrr6a2lMhMumUjUYHyV3wScmnDxLsMhbKdivn5wCd8AQ+ndnWXHna79NF47m3q4nDw8MCW+77dvuAlvxxPRxsZ1jW/MOWyN36/VJSQE/Yw2f3w3zAzs9gAfwKBgQDKkKeGUmFAZskRwfTmxChFGF01BxGL20XzFF0r6bNVUo7K4IWRbqxlbsBUHMvOSav7qJq9psg3fiQJcKLkBXe6WCNYP5mTOxIyC8XPli3FkH2j/TaKa19kHB5SxhPXfj1jXXUjLxVOQ2SNnoKgLQJgSBvUJxgxCH+uR0ZQVn0r4wKBgEoRH0QbduSEMnH++xGc11lSJhuPMbKwsuLIU/U8IQeisp9Uj/PsZRy9aUTLjPr94fx6/6aUgF9JjSid/1icX5bmVpKqme2T3/PkUTAqiO7Fp6lfTfDk7cXG3kgdfOWT5lCYsAKLlMUcf3zINQ1bFgSB9nR0qvq+0zOvZEUo0mG5AoGAG7mU1FOuL+xhlOahKHysrlhZWYqwIh5PAqhE4F/KReFY3ffBEFi/i9qOxHR0iLWYroczNsX/HWlMcWZTRTZiXsT1gXyi/n3VTbhCyNjbRvEx4SIlNujfU4pttBKcYKBMsq71+2zUU7PxrViGtHm0m40DEhSPwRZSs33Z5+EOnNUCgYBS7Khcig2lzoSQCue0RUDgrL0hM9qly2objQnCpyNyWc+W4QeVHBbpXALffDJTCcrEbosiBc1UdK+57/aUaoX4h8LDVIm/QYwh3z8L5X4JREFMc9U3Lli4qNObOWvsYitjgkFy4bcpUcCKJ5TlPv3ETsRF57KuK0tyDw9ZP76bIA==
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgw8XwP/k8Ufrdxw+NBTgqPB6rFuyr/mvNZsBrB+x55qCtjChMH2Yh9TBAu0TE0+GAkcBC0Cu9ujyVbF+tW2G7PPwudXENu63vZsnAuwbBQAdrotnCwsUuQhFXnMaDXUYskGd5Bl9I3e7549Fo8ABa55vs1TYO3NgOKr+5vj6pTxJRQ5yGHDAntmc4WwgzbbI5dJFLgf7FQdAmZGEGGDCkhywKOsER74Whj3ir6v4jVK4YbsQqeFwGyYtwxny+PcsmR0DzOINPS1sw2mm5pAZUhJg1mCsPWurlkRfSfoQ+nPeHmKhV0nrfAiD6xrGsQKFgFGfBFmpcU4NYi24HXLPNQIDAQAB
+
+  notifyUrl: http://hjymall.natapp1.cc/alipay/notify
+  # http://hjymall.natapp1.cc内网穿透，相当于http://127.0.0.1:8080
+
+#alipay:
+#  appId: 2016102600763473
+#  appPrivateKey: MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDDVLnhmbCGYwRfe+8K0KPVyxeZIXlK095HAW9Aiuq9tb3ikDh4zlxoJzmv+rUZtRQestoo7PCYNUTb2vaDOv9WaJ+vfkPSHl7+rx0PsG0fFPeIRyTHTQtjpLBEq1kuXojcnSCO41rhygmb3MJNYEZTLY+BdeaTMzWLSaL0O/ivmM4OvvhWdEhHUL7kotWL5b+jXAxu4bfJvlijAHt/7M7S3XPs70WfZpv6bYtnsz2tS0J7p3rVXVeYHIClIMpCgDUKzg2+O6CNoQBURLMjUNgcd8dYPU/i3ZbmDN2tAbm4qAaZAFNvvixkiQ8GmbXfQjQdrHRXsndWhaXsrIZrFHTHAgMBAAECggEBAK+QgrZUZkaTzwVnpnZpCykJLv+zB4sLHVli37T6Z3z2UmLGUAu9J29x+jbDN22QxTHGfbGVLbcRAgA+MZ3INGJdDVI2Qg0kwStXB97nK11pggcaMuNzy03XY5uFC1ZTH95y2CW2EiSpbLOL25SiePMgG0E4UHNz7qdwGyg8kwx3zgIKgp4GEbqCwAn+bXyI2svvql53nBzE0x6OPmUNWu+8OuysEtWLwjjDff9ft9pGb4+QUPdxbp0rqE3dEe5FwirsLeEodg2R/Yi3m2192pMyMeLf3rd38trJ8nmb6JlnKGzST23BtEB2ia6gVOtQHS703WrrCx6iICCVUYHwDCECgYEA+oA/rikrDi6pe76rtMZ5rVDRPaha/xfcW9vMLsoRLb7YuEP/BwbmUNq5TtM4BgSCSrTD6XUg0wPSX4BijvgeqFpBJAvQ90kTEfXGZnr2r2f635Bfo02mQr5IhyhPIKMJaM5wQVW1Op+Lx+eaa4j2BwcWNzt7F6AV/qPBwvPYHLECgYEAx55vn7z92fBfa7yNMm3XKNFxXo6uNN70iD5MyzdcTPuqz9R9UlCo1XIJGgV3C1bK4X2f+zFijtm8tqor+Q1N0j1hZKFW/YlF21/FPP6JPjniax/phegRwZ5jEuI/YF44YvkMbO6yPNqxsR+JO9lhgiW/8gnnmVDQIYRNjTfWpvcCgYEAuj6cGgr1vgenbx+mXjOqx9dsmqEPdtXwukNDHg6SkyZvzyCO/lR87OSSHi8gWikEDjMz7eFt1DXlNagonw+PC7B++iPm69Ri31mSdyM5QdTXS1z2Hl5fHQSIvCSWIDfXiRrjj0///GQe8zQZNZaRBUyZkdshe8FEWRy7tQzDQyECgYEAgYYQL7nVjUAm6iUiCQK0hUvBH/W8m5m/WVfzRDjbryftIYVi+7JSmoyv0y6Qm87pPX7h+3+Dz+UAShYJCkTTpgMl2sHFTCVyKnHt7THLo5CzlYbTY4u9WcCH0Iz1SnZYZ//pTBVlmY7dlWw9A5R9bJFKBqbem+CP6++I0oTUxukCgYEApmooMXYoXPIbEHiWxGzUEOFaOsGJaYEOIcJjbUqB+FoS2wFdPdKyomjwOF83+j3orPEL5SSXbMIRyxZNcuJAvXeEwJ6byx6d6txli1vfVfcfgn8YIaCZdYTgRTNGYYC4c6WrQ5Rt1kWO4oTVPPAsk2WT7sD99PpIFer5y3ICbkw=
+#  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmydAaVLYbtvWKdaZhN0zDAi8sym6nfCwO18hQfZZOtwIFoR90+CkxNCOtoLOPC3+ksB6wwoqzhn33v4cTkzmHJjhlN9MFVhCYWIw4z0RkjvE1snlMi8F+lynPIv9kRUDnv5N9tabagfmouuhJZ1Ly145yT+2MBOy20Jueaqj01xFak+kzgjqK4K/8Cid4kfLCj7t8btiOFWexfXy5ZLJHOsOvaiyrwkI7+pDe9eKiEwZQ7ixqwO6PSQsVf1swOjZMi30Lj8RcfsfrH9XAx7X2t1Qj945QEcCnT725gBqEJUmUb9bCpD9ioSas/USNqFMgS/iJ8n0gnAK1N8vueSykQIDAQAB
+#  notifyUrl: http://hjymall.natapp1.cc/alipay/notify
+#后端URL地址
+baseUrl: http://localhost:8080
+# 设置文件存放目录
+userFilePath: /Users/hjy/Downloads/synch/code_space/idea_workspace/dp/second-hand/backend/src/main/resources/xmtp

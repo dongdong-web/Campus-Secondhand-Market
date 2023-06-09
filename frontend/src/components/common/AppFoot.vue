@@ -1,6 +1,6 @@
 <template>
     <div class="foot-container">
-        <div class="author">校园二手闲置物品交易平台</div>
+        <div class="author">校园二手商城系统</div>
     </div>
 </template>
 

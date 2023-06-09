@@ -4,12 +4,10 @@ import com.second.hand.trading.server.dao.FavoriteDao;
 import com.second.hand.trading.server.dao.IdleItemDao;
 import com.second.hand.trading.server.model.FavoriteModel;
 import com.second.hand.trading.server.model.IdleItemModel;
-import com.second.hand.trading.server.model.OrderModel;
 import com.second.hand.trading.server.service.FavoriteService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -9,7 +9,7 @@
                 <el-tab-pane label="生活用品" name="2"></el-tab-pane>
                 <el-tab-pane label="运动相关" name="3"></el-tab-pane>
                 <el-tab-pane label="图书笔记" name="4"></el-tab-pane>
-                <el-tab-pane label="公告展示" name="5"></el-tab-pane>
+                <el-tab-pane label="求购展示" name="5"></el-tab-pane>
             </el-tabs>
             <div style="margin: 0 20px;">
                 <el-row :gutter="30">

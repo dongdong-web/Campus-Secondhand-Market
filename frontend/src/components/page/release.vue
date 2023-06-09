@@ -3,9 +3,9 @@
         <app-head></app-head>
         <app-body>
             <div class="release-idle-container">
-                <div class="release-idle-container-title">发布闲置/公告</div>
+                <div class="release-idle-container-title">发布闲置/求购</div>
                 <div class="release-idle-container-form">
-                    <el-input placeholder="请输入闲置/公告标题" v-model="idleItemInfo.idleName"
+                    <el-input placeholder="请输入闲置/求购标题" v-model="idleItemInfo.idleName"
                               maxlength="30"
                               show-word-limit>
                     </el-input>
@@ -13,7 +13,7 @@
                             class="release-idle-detiles-text"
                             type="textarea"
                             autosize
-                            placeholder="请输入闲置/公告的详细介绍..."
+                            placeholder="请输入闲置/求购的详细介绍..."
                             v-model="idleItemInfo.idleDetails"
                             maxlength="1000"
                             show-word-limit>
@@ -117,7 +117,7 @@
                     label: '图书笔记'
                 }, {
                     value: 5,
-                    label: '公告展示'
+                    label: '求购展示'
                 }],
                 imgList:[],
                 idleItemInfo:{
