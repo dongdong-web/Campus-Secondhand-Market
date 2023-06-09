@@ -24,9 +24,9 @@ public class AddressController {
                                     @NotEmpty(message = "登录异常 请重新登录") String shUserId,
                                 @RequestParam(value = "id",required = false) Long id){
 
-		/**
-		 * 1.@Null 限制只能为null
-		 * @NotNull 限制必须不为null   对象不是null就行，其他的不保证。
+		/*
+		  1.@Null 限制只能为null
+		  @NotNull 限制必须不为null   对象不是null就行，其他的不保证。
 		 *
 		 * 2.@NotEmpty除了@NotNull之外还需要保证@Size(min=1)
 		 * 这也是一个注解，这里规定最小长度等于1，也就是类似于集合非空。

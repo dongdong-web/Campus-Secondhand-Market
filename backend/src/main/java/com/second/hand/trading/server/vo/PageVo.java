@@ -1,36 +1,18 @@
 package com.second.hand.trading.server.vo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.List;
 
 
 // 通用分页对象
+@Data
+// 带参构造器
+@AllArgsConstructor
 public class PageVo <E>{
     private List<E> list;
     private int count;
-
-    public PageVo() {
-    }
-
-    public PageVo(List<E> list, int count) {
-        this.list = list;
-        this.count = count;
-    }
-
-    public List<E> getList() {
-        return list;
-    }
-
-    public void setList(List<E> list) {
-        this.list = list;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
 
     @Override
     public String toString() {
@@ -42,6 +24,5 @@ public class PageVo <E>{
         sb.append('}');
         return sb.toString();
     }
-
 
 }

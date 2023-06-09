@@ -10,6 +10,7 @@ import com.second.hand.trading.server.config.AliPayConfig;
 import com.second.hand.trading.server.model.OrderModel;
 import com.second.hand.trading.server.service.OrderService;
 import com.second.hand.trading.server.vo.AliPayVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,6 +40,8 @@ public class PayController {
 
     @Resource
     private OrderService orderService;
+
+
 
     @GetMapping("/pay") // &subject=xxx&traceNo=xxx&totalAmount=xxx
     public void pay(AliPayVo aliPayVo, HttpServletResponse httpResponse) throws Exception {
@@ -88,7 +91,7 @@ public class PayController {
             }
 
             String outTradeNo = params.get("out_trade_no");
-            String paymentTime = params.get("gmt_payment");
+            String paymentTime = params.get("payment_time");
             String alipayTradeNo = params.get("trade_no");
 
             String sign = params.get("sign");
@@ -103,13 +106,13 @@ public class PayController {
                 System.out.println("商户订单号: " + params.get("out_trade_no"));
                 System.out.println("交易金额: " + params.get("total_amount"));
                 System.out.println("买家在支付宝唯一id: " + params.get("buyer_id"));
-                System.out.println("买家付款时间: " + params.get("gmt_payment"));
+                System.out.println("买家付款时间: " + params.get("payment_time"));
                 System.out.println("买家付款金额: " + params.get("buyer_pay_amount"));
 
-//                // 查询订单
+                // 查询订单
+//                orderService.findOrderByNumber();
 //                QueryWrapper<OrderModel> queryWrapper = new QueryWrapper<>();
 //                queryWrapper.eq("order_id", outTradeNo);
-//                orderService.
 //                OrderModel orderModel = orderService.selectOne(queryWrapper);
 //
 //                if (orderModel != null) {

@@ -2,10 +2,11 @@ package com.second.hand.trading.server.utils;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.second.hand.trading.server.model.OrderModel;
+import lombok.Data;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
-
+@Data
 public class OrderTask implements Delayed {
     /**
      * 延迟时间
@@ -38,22 +39,6 @@ public class OrderTask implements Delayed {
         } else {
             return 1;
         }
-    }
-
-    public long getTime() {
-        return time;
-    }
-
-    public void setTime(long time) {
-        this.time = time;
-    }
-
-    public OrderModel getOrderModel() {
-        return orderModel;
-    }
-
-    public void setOrderModel(OrderModel orderModel) {
-        this.orderModel = orderModel;
     }
 
     @Override

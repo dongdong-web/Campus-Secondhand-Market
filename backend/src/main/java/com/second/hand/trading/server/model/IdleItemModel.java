@@ -1,5 +1,7 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -8,6 +10,7 @@ import java.util.Date;
  * sh_idle_item
  * @author hjy
  */
+@Data
 public class IdleItemModel implements Serializable {
     /**
      * 自增主键
@@ -63,94 +66,6 @@ public class IdleItemModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getIdleName() {
-        return idleName;
-    }
-
-    public void setIdleName(String idleName) {
-        this.idleName = idleName;
-    }
-
-    public String getIdleDetails() {
-        return idleDetails;
-    }
-
-    public void setIdleDetails(String idleDetails) {
-        this.idleDetails = idleDetails;
-    }
-
-    public String getPictureList() {
-        return pictureList;
-    }
-
-    public void setPictureList(String pictureList) {
-        this.pictureList = pictureList;
-    }
-
-    public BigDecimal getIdlePrice() {
-        return idlePrice;
-    }
-
-    public void setIdlePrice(BigDecimal idlePrice) {
-        this.idlePrice = idlePrice;
-    }
-
-    public String getIdlePlace() {
-        return idlePlace;
-    }
-
-    public void setIdlePlace(String idlePlace) {
-        this.idlePlace = idlePlace;
-    }
-
-    public Integer getIdleLabel() {
-        return idleLabel;
-    }
-
-    public void setIdleLabel(Integer idleLabel) {
-        this.idleLabel = idleLabel;
-    }
-
-    public Date getReleaseTime() {
-        return releaseTime;
-    }
-
-    public void setReleaseTime(Date releaseTime) {
-        this.releaseTime = releaseTime;
-    }
-
-    public Byte getIdleStatus() {
-        return idleStatus;
-    }
-
-    public void setIdleStatus(Byte idleStatus) {
-        this.idleStatus = idleStatus;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public UserModel getUser() {
-        return user;
-    }
-
-    public void setUser(UserModel user) {
-        this.user = user;
-    }
-
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -173,23 +88,6 @@ public class IdleItemModel implements Serializable {
             && (this.getReleaseTime() == null ? other.getReleaseTime() == null : this.getReleaseTime().equals(other.getReleaseTime()))
             && (this.getIdleStatus() == null ? other.getIdleStatus() == null : this.getIdleStatus().equals(other.getIdleStatus()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()));
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getIdleName() == null) ? 0 : getIdleName().hashCode());
-        result = prime * result + ((getIdleDetails() == null) ? 0 : getIdleDetails().hashCode());
-        result = prime * result + ((getPictureList() == null) ? 0 : getPictureList().hashCode());
-        result = prime * result + ((getIdlePrice() == null) ? 0 : getIdlePrice().hashCode());
-        result = prime * result + ((getIdlePlace() == null) ? 0 : getIdlePlace().hashCode());
-        result = prime * result + ((getIdleLabel() == null) ? 0 : getIdleLabel().hashCode());
-        result = prime * result + ((getReleaseTime() == null) ? 0 : getReleaseTime().hashCode());
-        result = prime * result + ((getIdleStatus() == null) ? 0 : getIdleStatus().hashCode());
-        result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        return result;
     }
 
     @Override

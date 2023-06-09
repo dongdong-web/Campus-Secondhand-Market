@@ -2,6 +2,8 @@ package com.second.hand.trading.server.vo;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.second.hand.trading.server.enums.ErrorMsg;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 /**
  * @author hjy
@@ -9,6 +11,7 @@ import com.second.hand.trading.server.enums.ErrorMsg;
  * 统一返回对象
  */
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
+@Data
 public class ResultVo<T> {
 
     private Integer status_code;
@@ -47,37 +50,4 @@ public class ResultVo<T> {
         return resultVo;
     }
 
-
-    public Integer getStatus_code() {
-        return status_code;
-    }
-
-    public void setStatus_code(Integer status_code) {
-        this.status_code = status_code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public ResultVo(Integer status_code, String msg, T data) {
-        this.status_code = status_code;
-        this.msg = msg;
-        this.data = data;
-    }
-
-    public ResultVo() {
-    }
 }

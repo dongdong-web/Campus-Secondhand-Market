@@ -175,7 +175,7 @@ public class OrderServiceImpl implements OrderService {
 
     /**
      * 获取我的所有订单
-     * 同时查询出对应的闲置信息，
+     * 同时查询出对应的闲置信息
      * 未做分页
      * userId建索引
      * @param userId

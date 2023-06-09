@@ -1,11 +1,14 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * sh_order_address
  * @author hjy
  */
+@Data
 public class OrderAddressModel implements Serializable {
     private Long id;
 
@@ -19,45 +22,6 @@ public class OrderAddressModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
-
-    public String getConsigneeName() {
-        return consigneeName;
-    }
-
-    public void setConsigneeName(String consigneeName) {
-        this.consigneeName = consigneeName;
-    }
-
-    public String getConsigneePhone() {
-        return consigneePhone;
-    }
-
-    public void setConsigneePhone(String consigneePhone) {
-        this.consigneePhone = consigneePhone;
-    }
-
-    public String getDetailAddress() {
-        return detailAddress;
-    }
-
-    public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
-    }
 
     @Override
     public boolean equals(Object that) {
@@ -78,17 +42,6 @@ public class OrderAddressModel implements Serializable {
             && (this.getDetailAddress() == null ? other.getDetailAddress() == null : this.getDetailAddress().equals(other.getDetailAddress()));
     }
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getOrderId() == null) ? 0 : getOrderId().hashCode());
-        result = prime * result + ((getConsigneeName() == null) ? 0 : getConsigneeName().hashCode());
-        result = prime * result + ((getConsigneePhone() == null) ? 0 : getConsigneePhone().hashCode());
-        result = prime * result + ((getDetailAddress() == null) ? 0 : getDetailAddress().hashCode());
-        return result;
-    }
 
     @Override
     public String toString() {

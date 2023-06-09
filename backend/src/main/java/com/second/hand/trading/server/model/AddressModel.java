@@ -1,11 +1,16 @@
 package com.second.hand.trading.server.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * sh_address
  * @author hjy
  */
+@Data
 public class AddressModel implements Serializable {
     /**
      * 自增主键
@@ -56,78 +61,6 @@ public class AddressModel implements Serializable {
     // 序列化时为了保持版本的兼容性，即在版本升级时反序列化仍保持对象的唯一性。
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getConsigneeName() {
-        return consigneeName;
-    }
-
-    public void setConsigneeName(String consigneeName) {
-        this.consigneeName = consigneeName;
-    }
-
-    public String getConsigneePhone() {
-        return consigneePhone;
-    }
-
-    public void setConsigneePhone(String consigneePhone) {
-        this.consigneePhone = consigneePhone;
-    }
-
-    public String getProvinceName() {
-        return provinceName;
-    }
-
-    public void setProvinceName(String provinceName) {
-        this.provinceName = provinceName;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public String getRegionName() {
-        return regionName;
-    }
-
-    public void setRegionName(String regionName) {
-        this.regionName = regionName;
-    }
-
-    public String getDetailAddress() {
-        return detailAddress;
-    }
-
-    public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
-    }
-
-    public Boolean getDefaultFlag() {
-        return defaultFlag;
-    }
-
-    public void setDefaultFlag(Boolean defaultFlag) {
-        this.defaultFlag = defaultFlag;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -153,23 +86,6 @@ public class AddressModel implements Serializable {
 
     // 在HashMap的“键”部分存放自定义的对象，
     // 一定要在这个对象里用自己的equals和hashCode方法来覆盖Object里的同名方法。
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getConsigneeName() == null) ? 0 : getConsigneeName().hashCode());
-        result = prime * result + ((getConsigneePhone() == null) ? 0 : getConsigneePhone().hashCode());
-        result = prime * result + ((getProvinceName() == null) ? 0 : getProvinceName().hashCode());
-        result = prime * result + ((getCityName() == null) ? 0 : getCityName().hashCode());
-        result = prime * result + ((getRegionName() == null) ? 0 : getRegionName().hashCode());
-        result = prime * result + ((getDetailAddress() == null) ? 0 : getDetailAddress().hashCode());
-        result = prime * result + ((getDefaultFlag() == null) ? 0 : getDefaultFlag().hashCode());
-        result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        return result;
-    }
-
 
     // 重写tostring 返回自己想要的形式
     @Override

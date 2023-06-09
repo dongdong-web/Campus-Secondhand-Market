@@ -1,11 +1,14 @@
 package com.second.hand.trading.server.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * sh_admin
  * @author hjy
  */
+@Data
 public class AdminModel implements Serializable {
     /**
      * 自增主键
@@ -32,38 +35,6 @@ public class AdminModel implements Serializable {
     // 序列化时为了保持版本的兼容性，即在版本升级时反序列化仍保持对象的唯一性。
     private static final long serialVersionUID = 1L;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
-    public String getAdminPassword() {
-        return adminPassword;
-    }
-
-    public void setAdminPassword(String adminPassword) {
-        this.adminPassword = adminPassword;
-    }
-
-    public String getAdminName() {
-        return adminName;
-    }
-
-    public void setAdminName(String adminName) {
-        this.adminName = adminName;
-    }
-
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -82,16 +53,7 @@ public class AdminModel implements Serializable {
             && (this.getAdminName() == null ? other.getAdminName() == null : this.getAdminName().equals(other.getAdminName()));
     }
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getAccountNumber() == null) ? 0 : getAccountNumber().hashCode());
-        result = prime * result + ((getAdminPassword() == null) ? 0 : getAdminPassword().hashCode());
-        result = prime * result + ((getAdminName() == null) ? 0 : getAdminName().hashCode());
-        return result;
-    }
+
 
     @Override
     public String toString() {
