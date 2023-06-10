@@ -1,5 +1,7 @@
-package com.second.hand.trading.server;
+package com.second.hand.trading.server.config;
 
+import com.second.hand.trading.server.controller.interceptor.CookieInterceptor;
+import com.second.hand.trading.server.controller.interceptor.LogCostInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -24,6 +26,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        // 拦截器顺序依次向下执行，退出则逆向执行after（1、2->2、1->2、1）
         registry.addInterceptor(new LogCostInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(new CookieInterceptor()).addPathPatterns("/**");
     }
 }

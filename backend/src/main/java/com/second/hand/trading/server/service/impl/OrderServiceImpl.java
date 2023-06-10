@@ -85,7 +85,7 @@ public class OrderServiceImpl implements OrderService {
                 OrderTaskHandler.addOrder(new OrderTask(orderModel,30*60));
                 return true;
             }else {
-                new RuntimeException();
+                throw new RuntimeException();
             }
         }
         return false;
