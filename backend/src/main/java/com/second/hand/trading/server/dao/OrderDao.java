@@ -29,4 +29,6 @@ public interface OrderDao {
     int updateByPrimaryKeySelective(OrderModel record);
 
     int updateByPrimaryKey(OrderModel record);
+
+    OrderModel findOrderByNumber(Long orderNumber);
 }

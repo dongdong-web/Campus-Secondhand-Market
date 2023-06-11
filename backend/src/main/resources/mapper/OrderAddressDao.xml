@@ -28,8 +28,7 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.second.hand.trading.server.model.OrderAddressModel" useGeneratedKeys="true">
-    insert into sh_order_address (order_id, consignee_name, consignee_phone,
-      detail_address)
+    insert into sh_order_address (order_id, consignee_name, consignee_phone,detail_address)
     values (#{orderId,jdbcType=BIGINT}, #{consigneeName,jdbcType=VARCHAR}, #{consigneePhone,jdbcType=VARCHAR},
       #{detailAddress,jdbcType=VARCHAR})
   </insert>

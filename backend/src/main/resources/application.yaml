@@ -45,6 +45,7 @@ alipay:
 
   notifyUrl: http://hjymall.natapp1.cc/alipay/notify
   # http://hjymall.natapp1.cc内网穿透，相当于http://127.0.0.1:8080
+  returnUrl: http://localhost:8081/#/me
 
 #alipay:
 #  appId: 2016102600763473

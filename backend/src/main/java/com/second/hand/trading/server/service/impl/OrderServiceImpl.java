@@ -246,7 +246,14 @@ public class OrderServiceImpl implements OrderService {
         return new PageVo<>(list,count);
     }
 
+    @Override
     public boolean deleteOrder(long id){
         return orderDao.deleteByPrimaryKey(id)==1;
+    }
+
+    @Override
+    public OrderModel getOrderByNumber(String number) {
+        Long orderNumber = Long.parseLong(number);
+        return orderDao.findOrderByNumber(orderNumber);
     }
 }

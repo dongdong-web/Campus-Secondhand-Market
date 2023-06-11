@@ -25,10 +25,11 @@ public interface OrderService {
 
     PageVo<OrderModel> findOrderByNumber(String searchValue, int page, int nums);
 
-    /**
-     *  获取订单信息
-     * @param name
+    /*
+       获取订单信息
+      @param name
      * */
+
 
     /**
      * 更新订单信息
@@ -54,4 +55,11 @@ public interface OrderService {
     PageVo<OrderModel> getAllOrder(int page, int nums);
 
     boolean deleteOrder(long id);
+
+    /**
+     * 通过订单号获取该订单
+     * @param number 订单编号
+     * @return 返回order实体类
+     */
+    OrderModel getOrderByNumber(String number);
 }
