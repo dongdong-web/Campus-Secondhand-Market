@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CookieInterceptor implements HandlerInterceptor {
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
 //        // 获取所有的cookie并进行处理
 //        Cookie[] cookies = request.getCookies();
 //        if (cookies != null) {
@@ -23,12 +23,12 @@ public class CookieInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
         // 后处理方法，在处理程序执行之后调用
     }
 
     @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
         // 完成处理方法，在请求完成之后调用
     }
 }

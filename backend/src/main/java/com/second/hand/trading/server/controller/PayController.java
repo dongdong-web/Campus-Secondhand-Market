@@ -40,8 +40,6 @@ public class PayController {
 
     @Resource
     private OrderService orderService;
-    @Resource
-    private OrderDao orderDao;
 
 
 
@@ -94,8 +92,8 @@ public class PayController {
             }
 
             String outTradeNo = params.get("out_trade_no");
-            String paymentTime = params.get("payment_time");
-            String alipayTradeNo = params.get("trade_no");
+//            String paymentTime = params.get("payment_time");
+//            String alipayTradeNo = params.get("trade_no");
 
             String sign = params.get("sign");
             String content = AlipaySignature.getSignCheckContentV1(params);
