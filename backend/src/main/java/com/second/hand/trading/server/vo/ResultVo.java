@@ -2,7 +2,6 @@ package com.second.hand.trading.server.vo;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.second.hand.trading.server.enums.ErrorMsg;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**

@@ -11,7 +11,6 @@ import com.second.hand.trading.server.dao.OrderDao;
 import com.second.hand.trading.server.model.OrderModel;
 import com.second.hand.trading.server.service.OrderService;
 import com.second.hand.trading.server.vo.AliPayVo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

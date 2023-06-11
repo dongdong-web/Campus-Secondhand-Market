@@ -2,10 +2,10 @@ package com.second.hand.trading.server.config;
 
 //import com.alipay.easysdk.factory.Factory;
 //import com.alipay.easysdk.kernel.Config;
+
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-import javax.annotation.PostConstruct;
 @Data
 @Component
 @ConfigurationProperties(prefix = "alipay")
