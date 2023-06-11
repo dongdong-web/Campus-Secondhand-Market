@@ -7,7 +7,6 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.second.hand.trading.server.config.AliPayConfig;
-import com.second.hand.trading.server.dao.OrderDao;
 import com.second.hand.trading.server.model.OrderModel;
 import com.second.hand.trading.server.service.OrderService;
 import com.second.hand.trading.server.vo.AliPayVo;
@@ -23,8 +22,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-// xjlugv6874@sandbox.com
-// 9428521.24 - 30 = 9428491.24 + 30 = 9428521.24
+// nasilc3673@sandbox.com
+// 111111
 @RestController
 @RequestMapping("/alipay")
 public class PayController {
@@ -114,7 +113,7 @@ public class PayController {
                 OrderModel orderModel = orderService.getOrderByNumber(outTradeNo);
 
                 if (orderModel != null) {
-                    // 将支付宝订单号放入订单实体类中
+//                     将支付宝订单号放入订单实体类中
                     orderModel.setOrderNumber(outTradeNo);
 
                     // 设置订单状态

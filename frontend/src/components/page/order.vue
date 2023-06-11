@@ -272,16 +272,16 @@ export default {
                     }).then(() => {
                         this.$api.updateOrder({
                             id: orderInfo.id,
-                            orderStatus: orderStatus,
+                            orderStatus: 0,
                             paymentStatus: 0,// 默认点击支付直接支付成功
                             // paymentWay: '支付宝',
                         }).then(res => {
                             var address = "http://localhost:8080/alipay/pay?subject=" + orderInfo.id + "&traceNo=" + orderInfo.orderNumber + "&totalAmount=" + orderInfo.idleItem.idlePrice;
+                            // orderStatus = 0; // 再次设置为0
                             console.log(res.data[0]);
-
-                            // window.open(address)
-                            window.location.href = address;
-
+                            console.log("orderStatus 此时为：" + orderStatus)
+                            window.open(address)
+                            // window.location.href = address;
                             // if (res.status_code === 1) {
                             //     this.$message({
                             //         message: '支付成功！',
