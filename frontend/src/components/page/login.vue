@@ -2,6 +2,11 @@
     <div class="login-container">
         <el-card class="box-card">
             <div class="login-body">
+                <!--  背景图  -->
+                <div id="image-preload">
+                    <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
+                </div>
+
                 <div class="login-title" @click="toIndex">校园二手商城系统</div>
 
                 <el-form ref="form" :model="userForm">
@@ -39,10 +44,6 @@
 
                     </div>
 
-                    <!--                    背景图-->
-                    <div id="image-preload">
-                        <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
-                    </div>
                 </el-form>
             </div>
         </el-card>

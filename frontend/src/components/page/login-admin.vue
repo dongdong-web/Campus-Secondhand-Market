@@ -2,6 +2,11 @@
     <div class="login-container">
         <el-card class="box-card">
             <div class="login-body">
+                <!--  背景图  -->
+                <div id="image-preload">
+                    <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
+                </div>
+
                 <div class="login-title">后台管理</div>
                 <el-form ref="form" :model="userForm">
                     <el-input placeholder="请输入管理员账号" v-model="userForm.accountNumber" class="login-input">
@@ -22,10 +27,6 @@
                         <router-link to="/login" class="sign-in-text">学生登录</router-link>
                     </div>
 
-                    <!--                    背景图-->
-                    <div id="image-preload">
-                        <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
-                    </div>
                 </el-form>
             </div>
         </el-card>

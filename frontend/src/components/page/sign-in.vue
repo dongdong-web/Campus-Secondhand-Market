@@ -2,6 +2,11 @@
     <div class="sign-in-container">
         <el-card class="box-card">
             <div class="sign-in-body">
+                <!--  背景图  -->
+                <div id="image-preload">
+                    <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
+                </div>
+
                 <div class="sign-in-title">校园二手商城系统</div>
                 <el-input placeholder="请输入昵称..." maxlength="30" v-model="userInfo.nickname" class="sign-in-input"
                           clearable>
@@ -16,13 +21,13 @@
                     </template>
                 </el-input>
                 <el-input placeholder="请输入密码..." show-password maxlength="16" v-model="userInfo.userPassword"
-                          class="sign-in-input" clearable>
+                          class="sign-in-input" clearable @blur="checkPasswordLength">
                     <template slot="prepend">
                         <div class="el-icon-lock"></div>
                     </template>
                 </el-input>
                 <el-input placeholder="请再次输入密码..." show-password maxlength="16" v-model="userPassword2"
-                          @keyup.enter.native="signIn" class="sign-in-input" clearable>
+                          @keyup.enter.native="signIn" class="sign-in-input" clearable @blur="checkPasswordLength">
                     <template slot="prepend">
                         <div class="el-icon-lock"></div>
                     </template>
@@ -34,10 +39,6 @@
                     <span @click="toLogin" class="login-text">登录</span>
                 </div>
 
-                <!--                    背景图-->
-                <div id="image-preload">
-                    <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
-                </div>
             </div>
         </el-card>
     </div>
@@ -57,12 +58,24 @@ export default {
         };
     },
     methods: {
+        // 加载背景图
         loadBackground() {
             const image = new Image();
             image.src = '../../assets/background-image.jpg';
             image.onload = () => {
                 // 背景图加载完成后的操作，例如设置背景样式
             };
+        },
+        checkPasswordLength() {
+            if (this.userInfo.userPassword.length < 9) {
+                this.$message.error('密码长度必须大于等于9位！');
+            }
+            // else if(this.userPassword2 !== this.userInfo.userPassword) {
+            //     this.$message.error('两次输入的密码不相同！');
+            // }
+            else {
+                this.$message.error('两次输入的密码不相同！');
+            }
         },
         toLogin() {
             this.$router.replace({path: '/login'});
