@@ -24,7 +24,7 @@
                     </template>
                 </el-input>
                 <div class="sign-in-submit">
-                    <el-button type="primary" @click="signIn">注册</el-button>
+                    <el-button type="primary" class="sign-button" @click="signIn">注册</el-button>
                 </div>
                 <div class="login-container">
                     <span @click="toLogin" class="login-text">登录</span>
@@ -96,6 +96,13 @@
 </script>
 
 <style scoped>
+.sign-in-container .box-card{
+    border-radius: 10px; /* 添加border-radius属性，设置圆弧角大小 */
+    background-color: rgba(255, 255, 255, 0.1); /* 设置盒子的背景颜色和透明度 */
+    backdrop-filter: blur(5px); /* 添加模糊效果，可以根据需要调整模糊半径 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加内部阴影效果 */
+}
+
 .preload-image {
     position: absolute;
     top: -9999px;
@@ -118,6 +125,8 @@
         padding: 30px;
         width: 400px;
         height: 100%;
+        border-radius: 10px; /* 添加border-radius属性，设置圆弧角大小 */
+
     }
 
     .sign-in-title {
@@ -135,8 +144,13 @@
         display: flex;
         justify-content: center;
     }
+    .sign-in-submit .sign-button{
+        width: 400px;
+        height: 40px;
+    }
     .login-container{
         padding: 0 10px;
+        margin-top: 15px;
     }
     .login-text{
         color: #409EFF;

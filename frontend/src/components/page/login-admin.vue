@@ -16,7 +16,7 @@
                         </template>
                     </el-input>
                     <div class="login-submit">
-                        <el-button type="primary" @click="login">登录</el-button>
+                        <el-button type="primary" class="login-button" @click="login">登录</el-button>
                     </div>
                     <div class="other-submit">
                         <router-link to="/login" class="sign-in-text">学生登录</router-link>
@@ -73,6 +73,17 @@
 </script>
 
 <style scoped>
+.login-submit .login-button{
+    width: 400px;
+    height: 40px;
+}
+
+.login-container .box-card{
+    border-radius: 10px; /* 添加border-radius属性，设置圆弧角大小 */
+    background-color: rgba(255, 255, 255, 0.1); /* 设置盒子的背景颜色和透明度 */
+    backdrop-filter: blur(5px); /* 添加模糊效果，可以根据需要调整模糊半径 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加内部阴影效果 */
+}
 
 .preload-image {
     position: absolute;
@@ -95,6 +106,7 @@
         padding: 30px;
         width: 400px;
         height: 100%;
+        border-radius: 10px; /* 添加border-radius属性，设置圆弧角大小 */
     }
     .login-title {
         padding-bottom: 30px;
