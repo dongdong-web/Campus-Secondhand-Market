@@ -2,7 +2,7 @@
     <div class="sign-in-container">
         <el-card class="box-card">
             <div class="sign-in-body">
-                <div class="sign-in-title">注册</div>
+                <div class="sign-in-title">校园二手商城系统</div>
                 <el-input placeholder="请输入昵称..." maxlength="30"  v-model="userInfo.nickname" class="sign-in-input" clearable>
                     <template slot="prepend">
                         <div class="el-icon-user-solid"></div>
@@ -24,10 +24,15 @@
                     </template>
                 </el-input>
                 <div class="sign-in-submit">
-                    <el-button type="primary" @click="signIn">提交</el-button>
+                    <el-button type="primary" @click="signIn">注册</el-button>
                 </div>
                 <div class="login-container">
                     <span @click="toLogin" class="login-text">登录</span>
+                </div>
+
+                <!--                    背景图-->
+                <div id="image-preload">
+                    <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
                 </div>
             </div>
         </el-card>
@@ -48,6 +53,13 @@
             };
         },
         methods:{
+            loadBackground() {
+                const image = new Image();
+                image.src = '../../assets/background-image.jpg';
+                image.onload = () => {
+                    // 背景图加载完成后的操作，例如设置背景样式
+                };
+            },
             toLogin(){
                 this.$router.replace({path: '/login'});
             },
@@ -84,6 +96,13 @@
 </script>
 
 <style scoped>
+.preload-image {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+}
+
     .sign-in-container {
         display: flex;
         justify-content: center;
@@ -91,6 +110,8 @@
         height: 100vh;
         width: 100%;
         background-color: #f1f1f1;
+        background-image: url('../../assets/background.jpg'); /* 背景图的URL */
+        background-size: cover /* 背景图的适应方式 */
     }
 
     .sign-in-body {

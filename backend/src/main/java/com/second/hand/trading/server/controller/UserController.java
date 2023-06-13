@@ -77,7 +77,6 @@ public class UserController {
             return ResultVo.fail(ErrorMsg.ACCOUNT_Ban);
         }
         Cookie cookie = new Cookie("shUserId", String.valueOf(userModel.getId()));
-//        cookie.setMaxAge(60 * 60 * 24 * 30);
         cookie.setPath("/");
         cookie.setHttpOnly(false);
         response.addCookie(cookie);

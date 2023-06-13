@@ -57,4 +57,3 @@ baseUrl: http://localhost:8080
 # 设置文件存放目录
 userFilePath: /Users/hjy/Downloads/synch/code_space/idea_workspace/dp/second-hand/backend/src/main/resources/xmtp
 
-# 指明log4j2.yml的位置

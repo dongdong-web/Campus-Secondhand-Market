@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * @author: hjy
+ * @author hjy
  */
 public class FileUtils {
 

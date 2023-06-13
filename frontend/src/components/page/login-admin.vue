@@ -21,6 +21,11 @@
                     <div class="other-submit">
                         <router-link to="/login" class="sign-in-text">学生登录</router-link>
                     </div>
+
+                    <!--                    背景图-->
+                    <div id="image-preload">
+                        <img class="preload-image" src="../../assets/background.jpg" alt="Preload Image">
+                    </div>
                 </el-form>
             </div>
         </el-card>
@@ -39,6 +44,13 @@
             };
         },
         methods: {
+            loadBackground() {
+                const image = new Image();
+                image.src = '../../assets/background-image.jpg';
+                image.onload = () => {
+                    // 背景图加载完成后的操作，例如设置背景样式
+                };
+            },
             login() {
                 this.$api.adminLogin({
                     accountNumber: this.userForm.accountNumber,
@@ -61,6 +73,14 @@
 </script>
 
 <style scoped>
+
+.preload-image {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+}
+
     .login-container {
         display: flex;
         justify-content: center;
@@ -68,6 +88,8 @@
         height: 100vh;
         width: 100%;
         background-color: #f1f1f1;
+        background-image: url('../../assets/background.jpg'); /* 背景图的URL */
+        background-size: cover /* 背景图的适应方式 */
     }
     .login-body {
         padding: 30px;

@@ -16,7 +16,7 @@ export default new Router({
     routes: [
         {
             // path: '/',原来的
-            path: '',
+            path: '/',
             redirect: '/index'
         },
         {
