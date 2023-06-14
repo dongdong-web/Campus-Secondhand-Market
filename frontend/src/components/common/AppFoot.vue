@@ -1,7 +1,7 @@
 <template>
-    <div class="foot-container">
+    <footer class="foot-container">
         <div class="author">校园二手商城系统</div>
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -15,7 +15,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        height: 40px;
+        /*height: 40px;*/
         padding-top: 10px;
     }
 

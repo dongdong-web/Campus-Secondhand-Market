@@ -118,7 +118,7 @@
     }
 
     .header-container {
-        width: 1000px;
+        width: 1200px;
         height: 100%;
         display: flex;
         align-items: center;

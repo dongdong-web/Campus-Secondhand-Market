@@ -19,7 +19,7 @@
         justify-content: center;
     }
     .main-content{
-        width: 1000px;
+        width: 1200px;
         background-color: #ffffff;
         min-height: 90vh;
     }

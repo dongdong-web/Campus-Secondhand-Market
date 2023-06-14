@@ -42,7 +42,7 @@
                             </el-select>
                         </div>
                         <div v-show="idleItemInfo.idleLabel !== 5" style="width: 300px;">
-                            <el-input-number v-model="idleItemInfo.idlePrice" :precision="2" :step="10" :max="10000000">
+                            <el-input-number v-model="idleItemInfo.idlePrice" :precision="2" :step="10" :max="10000000" :min="0">
                                 <div slot="prepend">价格</div>
                             </el-input-number>
                         </div>
