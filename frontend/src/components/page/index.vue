@@ -148,6 +148,7 @@ export default {
 </script>
 
 <style scoped>
+
 .container {
     min-height: 85vh;
 }
@@ -198,6 +199,7 @@ export default {
     text-overflow: ellipsis;
     margin: 10px;
 }
+
 
 .idle-price {
     font-size: 16px;
