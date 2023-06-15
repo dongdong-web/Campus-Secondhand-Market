@@ -1,9 +1,13 @@
 <template>
     <div>
         <app-head></app-head>
+
+        <!-- 页面主体部分 -->
         <app-body>
-            <div style="min-height: 85vh;">
+            <div class="container">
+                <!-- 标签页 -->
                 <el-tabs v-model="labelName" type="card" @tab-click="handleClick">
+                    <!-- 标签页项 -->
                     <el-tab-pane label="全部" name="0"></el-tab-pane>
                     <el-tab-pane label="数码科技" name="1"></el-tab-pane>
                     <el-tab-pane label="生活用品" name="2"></el-tab-pane>
@@ -11,12 +15,14 @@
                     <el-tab-pane label="图书笔记" name="4"></el-tab-pane>
                     <el-tab-pane label="求购展示" name="5"></el-tab-pane>
                 </el-tabs>
-                <div style="margin: 0 20px;">
+
+                <div class="inner-container">
+                    <!-- 列表项 -->
                     <el-row :gutter="30">
                         <el-col :span="6" v-for="(idle,index) in idleList">
                             <div class="idle-card" @click="toDetails(idle)">
                                 <el-image
-                                        style="width: 100%; height: 160px"
+                                        class="image"
                                         :src="idle.imgUrl"
                                         fit="contain">
                                     <div slot="error" class="image-slot">
@@ -26,20 +32,22 @@
                                 <div class="idle-title">
                                     {{ idle.idleName }}
                                 </div>
-                                <el-row style="margin: 5px 10px;">
+                                <el-row class="row-style">
                                     <el-col :span="12">
-                                        <div v-show="idle.idlePrice !== 0" class="idle-prive">￥{{ idle.idlePrice }}
-                                        </div>
+                                        <!-- 显示价格 -->
+                                        <div v-show="idle.idlePrice !== 0" class="idle-price">￥{{ idle.idlePrice }}</div>
+                                        <!-- 隐藏价格占位 -->
                                         <div v-show="idle.idlePrice === 0">&nbsp;&nbsp;</div>
                                     </el-col>
                                     <el-col :span="12">
+                                        <!-- 地点信息 -->
                                         <div class="idle-place">{{ idle.idlePlace }}</div>
                                     </el-col>
                                 </el-row>
                                 <div class="idle-time">{{ idle.timeStr }}</div>
                                 <div class="user-info">
                                     <el-image
-                                            style="width: 30px; height: 30px"
+                                            class="avatar"
                                             :src="idle.user.avatar"
                                             fit="contain">
                                         <div slot="error" class="image-slot">
@@ -52,6 +60,7 @@
                         </el-col>
                     </el-row>
                 </div>
+                <!-- 分页组件 -->
                 <div class="fenye">
                     <el-pagination
                             background
@@ -170,11 +179,34 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+    min-height: 85vh;
+}
+
+.inner-container {
+    margin: 0 20px;
+}
+
+.image {
+    width: 100%;
+    height: 160px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+}
+
 .idle-card {
     height: 300px;
     border: #eeeeee solid 1px;
     margin-bottom: 15px;
     cursor: pointer;
+}
+
+.row-style {
+    margin: 5px 10px;
 }
 
 .fenye {
@@ -193,7 +225,7 @@ export default {
     margin: 10px;
 }
 
-.idle-prive {
+.idle-price {
     font-size: 16px;
     color: red;
 }
