@@ -69,11 +69,7 @@ export default {
         checkPasswordLength() {
             if (this.userInfo.userPassword.length < 9) {
                 this.$message.error('密码长度必须大于等于9位！');
-            }
-            // else if(this.userPassword2 !== this.userInfo.userPassword) {
-            //     this.$message.error('两次输入的密码不相同！');
-            // }
-            else {
+            } else if(this.userInfo.userPassword !== this.userPassword2) {
                 this.$message.error('两次输入的密码不相同！');
             }
         },
