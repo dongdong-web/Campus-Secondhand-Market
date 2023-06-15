@@ -98,21 +98,22 @@ export default {
         };
     },
     created() {
-        this.findIdleTiem(1)
+        this.findIdleTiem(1); // 在组件创建时调用，传入初始页码1
     },
     watch: {
         $route(to, from) {
-            this.labelName = to.query.labelName;
-            let val = parseInt(to.query.page) ? parseInt(to.query.page) : 1;
+            this.labelName = to.query.labelName; // 监听路由变化，更新labelName
+            let val = parseInt(to.query.page) ? parseInt(to.query.page) : 1; // 将字符串类型的页码转换为整数
             // let totalPage=parseInt(this.totalItem/8)+1;
             // val=parseInt(val%totalPage);
             // val=val===0?totalPage:val;
-            this.currentPage = parseInt(to.query.page) ? parseInt(to.query.page) : 1;
-            this.findIdleTiem(val);
+            this.currentPage = parseInt(to.query.page) ? parseInt(to.query.page) : 1; //更新当前页码
+            this.findIdleTiem(val); // 根据新的页码调用方法
         }
     },
     methods: {
         findIdleTiem(page) {
+            // 查找空闲列表数据
             const loading = this.$loading({
                 lock: true,
                 text: '加载数据中',
@@ -120,6 +121,7 @@ export default {
                 background: 'rgba(0, 0, 0, 0)'
             });
             if (this.labelName > 0) {
+                // 根据标签名查找空闲列表
                 this.$api.findIdleTiemByLable({
                     idleLabel: this.labelName,
                     page: page,
