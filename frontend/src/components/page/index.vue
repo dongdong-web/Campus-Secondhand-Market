@@ -19,19 +19,14 @@
                 <div class="inner-container">
                     <!-- 列表项 -->
                     <el-row :gutter="30">
-                        <el-col :span="6" v-for="(idle,index) in idleList">
+                        <el-col :span="6" v-for="(idle, index) in idleList" :key="index">
                             <div class="idle-card" @click="toDetails(idle)">
-                                <el-image
-                                        class="image"
-                                        :src="idle.imgUrl"
-                                        fit="contain">
+                                <el-image class="image" :src="idle.imgUrl" fit="contain">
                                     <div slot="error" class="image-slot">
                                         <i class="el-icon-picture-outline">无图</i>
                                     </div>
                                 </el-image>
-                                <div class="idle-title">
-                                    {{ idle.idleName }}
-                                </div>
+                                <div class="idle-title">{{ idle.idleName }}</div>
                                 <el-row class="row-style">
                                     <el-col :span="12">
                                         <!-- 显示价格 -->
@@ -46,10 +41,7 @@
                                 </el-row>
                                 <div class="idle-time">{{ idle.timeStr }}</div>
                                 <div class="user-info">
-                                    <el-image
-                                            class="avatar"
-                                            :src="idle.user.avatar"
-                                            fit="contain">
+                                    <el-image class="avatar" :src="idle.user.avatar" fit="contain">
                                         <div slot="error" class="image-slot">
                                             <i class="el-icon-picture-outline">无图</i>
                                         </div>
@@ -68,8 +60,8 @@
                             :current-page.sync="currentPage"
                             :page-size="8"
                             layout="prev, pager, next, jumper"
-                            :total="totalItem">
-                    </el-pagination>
+                            :total="totalItem"
+                    ></el-pagination>
                 </div>
             </div>
             <app-foot></app-foot>
@@ -102,66 +94,41 @@ export default {
     },
     watch: {
         $route(to, from) {
-            this.labelName = to.query.labelName; // 监听路由变化，更新labelName
-            let val = parseInt(to.query.page) ? parseInt(to.query.page) : 1; // 将字符串类型的页码转换为整数
-            // let totalPage=parseInt(this.totalItem/8)+1;
-            // val=parseInt(val%totalPage);
-            // val=val===0?totalPage:val;
-            this.currentPage = parseInt(to.query.page) ? parseInt(to.query.page) : 1; //更新当前页码
-            this.findIdleTiem(val); // 根据新的页码调用方法
+            this.labelName = to.query.labelName;
+            let val = parseInt(to.query.page) || 1;
+            this.currentPage = val;
+            this.findIdleTiem(val);
         }
     },
     methods: {
-        findIdleTiem(page) {
-            // 查找空闲列表数据
+        async findIdleTiem(page) {
             const loading = this.$loading({
                 lock: true,
                 text: '加载数据中',
                 spinner: 'el-icon-loading',
                 background: 'rgba(0, 0, 0, 0)'
             });
-            if (this.labelName > 0) {
-                // 根据标签名查找空闲列表
-                this.$api.findIdleTiemByLable({
-                    idleLabel: this.labelName,
-                    page: page,
-                    nums: 8
-                }).then(res => {
-                    console.log(res);
-                    let list = res.data.list;
-                    for (let i = 0; i < list.length; i++) {
-                        list[i].timeStr = list[i].releaseTime.substring(0, 10) + " " + list[i].releaseTime.substring(11, 19);
-                        let pictureList = JSON.parse(list[i].pictureList);
-                        list[i].imgUrl = pictureList.length > 0 ? pictureList[0] : '';
-                    }
-                    this.idleList = list;
-                    this.totalItem = res.data.count;
-                    console.log(this.totalItem);
-                }).catch(e => {
-                    console.log(e)
-                }).finally(() => {
-                    loading.close();
-                })
-            } else {
-                this.$api.findIdleTiem({
-                    page: page,
-                    nums: 8
-                }).then(res => {
-                    console.log(res);
-                    let list = res.data.list;
-                    for (let i = 0; i < list.length; i++) {
-                        list[i].timeStr = list[i].releaseTime.substring(0, 10) + " " + list[i].releaseTime.substring(11, 19);
-                        let pictureList = JSON.parse(list[i].pictureList);
-                        list[i].imgUrl = pictureList.length > 0 ? pictureList[0] : '';
-                    }
-                    this.idleList = list;
-                    this.totalItem = res.data.count;
-                    console.log(this.totalItem);
-                }).catch(e => {
-                    console.log(e)
-                }).finally(() => {
-                    loading.close();
-                })
+            try {
+                const response = await (this.labelName > 0 ?
+                    this.$api.findIdleTiemByLable({ idleLabel: this.labelName, page, nums: 8 }) :
+                    this.$api.findIdleTiem({ page, nums: 8 }));
+
+                const list = response.data.list.map(item => {
+                    const pictureList = JSON.parse(item.pictureList);
+                    return {
+                        ...item,
+                        timeStr: `${item.releaseTime.substring(0, 10)} ${item.releaseTime.substring(11, 19)}`,
+                        imgUrl: pictureList.length > 0 ? pictureList[0] : ''
+                    };
+                });
+
+                this.idleList = list;
+                this.totalItem = response.data.count;
+                console.log(this.totalItem);
+            } catch (error) {
+                console.log(error);
+            } finally {
+                loading.close();
             }
         },
         handleClick(tab, event) {
@@ -181,7 +148,6 @@ export default {
 </script>
 
 <style scoped>
-
 .container {
     min-height: 85vh;
 }
@@ -205,6 +171,12 @@ export default {
     border: #eeeeee solid 1px;
     margin-bottom: 15px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.idle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .row-style {
@@ -237,7 +209,6 @@ export default {
     color: #666666;
     float: right;
     padding-right: 20px;
-
 }
 
 .idle-time {
